@@ -6,10 +6,10 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
 # Load the trained model
-model = load_model('C:\\Users\\Brahmi\\OneDrive\\Documents\\4-2 sem\\4-2 Project\\model.h5')
+model = load_model('../../model.h5')
 
 # Load the stock data
-data = pd.read_csv("C:\\Users\\Brahmi\\OneDrive\\Documents\\4-2 sem\\all_stocks_5yr.csv")
+data = pd.read_csv("../../all_stocks_5yr.csv.zip")
 
 # Use 'close' prices for simplicity (you might want to use more features for a real-world scenario)
 features = data[['close']].values
